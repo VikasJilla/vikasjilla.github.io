@@ -1,40 +1,35 @@
 <html>
     <head>
-        <style>
-            .center{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-            .welcomeText{
-                color: #AA000000 50%;
-            }
-            .fillHeight{
-                height: 100%;
-            }
-            .textAlignCenter{
-                text-align: center;
-            }
-            .icon{
-                width: 18px;
-                height: 18px;
-            }
-            a{
-                color: white;
-                text-decoration: none;
-                text-transform: capitalize;
-                background-color: #0073b1;
-                padding: 8px;
-                border-radius: 5px;
-            }
-        </style>
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
     </head>
 <body>
-    <div class="center welcomeText textAlignCenter">
-        <div>Welcome!</div><br/>
-        <div>Connect with me on <a href="https://www.linkedin.com/in/vikas-jilla-95356657" target="_blank"><img class="icon" src="assets/linkedin_.png"/> Linkedin</a></div><br/>
-        <div>Look at my work at <a href="https://github.com/VikasJilla" target="_blank">Github</a></div>
+    <div id="wrapper">
+        <div style="display: flex; align-items:flex-end; float: right;" class="topBar">
+            <div class="selected option" style="display: table-cell;" onclick="onOptionSelected()">About</div>
+            <div class = "option" style="display: table-cell;" onclick="onOptionSelected()">Portfolio</div>
+        </div>
+        <div id="content_holder" class="content">
+            <div id = "profilePhotoContainer" style="display:flex;">
+                <div id="profilePhoto">
+                    <img src="assets/profile_photo.png" style="height:auto;width: 100%;"/>
+                </div>
+                <div>
+                    <div>Hello There!</div><br/>
+                    <div>
+                        Welcome! This is <span style="color: brown;">Vikas Jilla</span>. I am some one who loves to implement software, read books, watch movies and play sports.
+                        I am always curious about the things around me that includes different technologies in Software development to the things that are happening in other fields.
+                        I have 5+ years of experience in Mobile Application development, but here I am trying to build a website that you are looking at.
+                    </div>
+                    <div>
+                        <img class = "externalProfile" src="assets/linkedin_.png" id="linkedin"/>
+                        <img class = "externalProfile" src="assets/github.png" id="github"/>
+                        <img class = "externalProfile" src="assets/WordPress_logo.png" id="wordpress"/>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
