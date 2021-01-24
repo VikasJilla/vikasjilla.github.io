@@ -28,3 +28,7 @@ function onWindowResize(){
         document.getElementById("profilePhotoContainer").style.display = "flex";
     }
 }
+
+window.onload = function() {
+    onWindowResize();
+};
