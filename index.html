@@ -1,35 +1,39 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="styles/index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/index.js"></script>
-    </head>
+
+<head>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
 <body>
-    <div id="wrapper">
-        <div style="display: flex; align-items:flex-end; float: right;" class="topBar">
-            <div class="selected option" style="display: table-cell;" onclick="onOptionSelected()">About</div>
-            <div class = "option" style="display: table-cell;" onclick="onOptionSelected()">Portfolio</div>
+    <div class="topBar">
+        <div class="selected option" onclick="onOptionSelected()">About</div>
+        <div class="option" onclick="onOptionSelected()">Portfolio</div>
+    </div>
+    <div id="content_holder">
+        <div id="profilePhoto">
+            <img src="assets/profile_photo.png" style="height:auto;width: 100%;" />
         </div>
-        <div id="content_holder" class="content">
-            <div id = "profilePhotoContainer" style="display:flex;">
-                <div id="profilePhoto">
-                    <img src="assets/profile_photo.png" style="height:auto;width: 100%;"/>
+        <div id="profilePhotoContainer">
+            <div>
+                <div>Hello There!</div><br />
+                <div>
+                    Welcome! This is <span style="color: brown;">Vikas Jilla</span>. I love to
+                    implement software, read books, watch movies and play sports.
+                    I am curious about various aspects including different technologies in Software
+                    development to the things that are happening in other fields.
+                    I have 5+ years of experience in Mobile Application development, but here I am trying to build a
+                    website that you are looking at.
                 </div>
                 <div>
-                    <div>Hello There!</div><br/>
-                    <div>
-                        Welcome! This is <span style="color: brown;">Vikas Jilla</span>. I am some one who loves to implement software, read books, watch movies and play sports.
-                        I am always curious about the things around me that includes different technologies in Software development to the things that are happening in other fields.
-                        I have 5+ years of experience in Mobile Application development, but here I am trying to build a website that you are looking at.
-                    </div>
-                    <div>
-                        <img class = "externalProfile" src="assets/linkedin_.png" id="linkedin"/>
-                        <img class = "externalProfile" src="assets/github.png" id="github"/>
-                        <img class = "externalProfile" src="assets/WordPress_logo.png" id="wordpress"/>
-                    </div>
+                    <img class="externalProfile" src="assets/linkedin_.png" id="linkedin" />
+                    <img class="externalProfile" src="assets/github.png" id="github" />
+                    <img class="externalProfile" src="assets/WordPress_logo.png" id="wordpress" />
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

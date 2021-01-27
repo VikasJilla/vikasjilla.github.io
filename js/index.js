@@ -23,9 +23,17 @@ window.addEventListener("resize", onWindowResize);
 function onWindowResize(){
     var w = $(document).width()*0.2;
     if(w<200){
-        document.getElementById("profilePhotoContainer").style.display = "contents";
+        document.getElementById("content_holder").style.flexDirection = "column";
+        var elements = document.getElementsByClassName('externalProfile');
+        for(var i = 0;i< elements.length;i++){
+            elements[i].classList.add("externalProfileMobile");
+        }
     }else{
-        document.getElementById("profilePhotoContainer").style.display = "flex";
+        document.getElementById("content_holder").style.flexDirection = "row";
+        var elements = document.getElementsByClassName('externalProfileMobile');
+        for(var i = 0;i< elements.length;i++){
+            elements[i].classList.remove("externalProfileMobile");
+        }
     }
 }
 
